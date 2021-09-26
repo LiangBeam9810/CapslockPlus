@@ -63,7 +63,9 @@ F24 & o:: Enter
 F24 & n::PgUp
 F24 & m::PgDn
 
-q'z
+
+
+
 return
 ;===================================================
 ;SpaceFn
@@ -94,12 +96,18 @@ F23 & SC00C:: Send +{SC00C}
 F23 & SC00D:: Send +{SC00D}
 F23 & SC01A:: Send +{SC01A}
 F23 & SC01B:: Send +{SC01B}
-F23 & SC027:: Send +{SC027}
+F23 & SC027:: Send +{SC027}  
 F23 & SC028:: Send +{SC028}
 F23 & SC033:: Send +{SC033}
 F23 & SC034:: Send +{SC034}
 F23 & SC035:: Send +{SC035}
 F23 & SC029:: Send +{SC029}
 
-F23 & Enter::^Enter
+F23 & Enter::Send ^Enter
+F23 & e:: Send {Click}
+F23 & r:: Send {Click, Right}
+F23 & d:: Send {Delete}
+
+F23 & w:: Send {Delete}
+F23 & s:: Send {Delete}
 return
