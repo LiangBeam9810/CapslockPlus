@@ -39,11 +39,7 @@ $CapsLock::
     Send {Blind}{F24 DownR}
     KeyWait, CapsLock
     Send {Blind}{F24 up}
-    ; MsgBox, %A_ThisHotkey%-%A_TimeSinceThisHotkey%
-    if(A_ThisHotkey="$CapsLock" and A_TimeSinceThisHotkey<300)
-        Send {Blind}{CapsLock DownR} 
     return
-
 #inputlevel,1
 F24 & i::Up
 F24 & k::Down
